@@ -17,12 +17,15 @@ function pageLoad() {
         member.className = 'member';
         member.innerHTML =
             `<div>
-            <div class="mbrName">Leanne Graham</div>
-            <div class="mbrEmail">Nathan@yesenia.net</div>
+            <div style='display:flex; flex-wrap:wrap;'>
+            <div class="mbrName">${node.username}</div>
+            <div class="mbrName">(${node.name})</div>
+            </div>
+            <div class="mbrEmail">${node.email}</div>
           </div>
           <div>
-            <div class="mbrPhoneWebsite">1-463-123-4447</div>
-            <div class="mbrPhoneWebsite">ramiro.info</div>
+            <div class="mbrPhoneWebsite">${node.phone}</div>
+            <div class="mbrPhoneWebsite">${node.website}</div>
           </div>`;
           document.body.appendChild(member);
     }
