@@ -4,8 +4,14 @@
 html,
 body {
   display: flex;
-  margin: 5% 5% 5% 5%;
+  margin: 2% 5% 2% 5%;
   flex-wrap: wrap;
+}
+
+#member-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0% 0% 0% 10%;
 }
 
 .member {

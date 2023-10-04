@@ -15,6 +15,7 @@ function pageLoad() {
   })
   function createMember(node) {
     const member = document.createElement('div');
+    const memlist= document.getElementById("member-container");
     member.className = 'member';
     member.innerHTML =
       `<div>
@@ -28,7 +29,7 @@ function pageLoad() {
             <div class="mbrPhoneWebsite">${node.phone}</div>
             <div class="mbrPhoneWebsite">${node.website}</div>
           </div>`;
-    document.body.appendChild(member);
+    memlist.appendChild(member);
   }
 
 }
